@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>bin\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>XanTools.FtpServer</PackageId>
+        <Version>2.0.0</Version>
+        <Description>
+            An implementation of FTP protocol. XanFtpClient and XanFtpServer classes are used to exchange files.
+        </Description>
+        <Authors>Xan Tools</Authors>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="XanTools.StreamExtensions" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>
